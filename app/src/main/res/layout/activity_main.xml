@@ -1,0 +1,216 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/footbalfield">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:background="@color/chelsea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/paddingForText"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"
+                android:textColor="@color/nameTeams"
+                android:text="@string/chelsea"
+                android:layout_marginTop="@dimen/marginForTextTop"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/paddingForText"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"
+                android:text="@string/score"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/information"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/paddingForText"
+                android:textSize="50sp"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"
+                android:textStyle="bold"
+                android:text="@string/zero"
+                android:textColor="@color/information"
+                android:id="@+id/team_a_score"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginButton"
+                android:text="@string/goal"
+                android:onClick="goalTeamA"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextLeft"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/paddingForText"
+                android:text="@string/foal"
+                android:textAllCaps="true"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/information"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="@dimen/marginForTextTop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/paddingForText"
+                android:textSize="50sp"
+                android:textColor="@color/information"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"
+                android:textStyle="bold"
+                android:text="@string/zero"
+                android:id="@+id/team_a_foal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginButton"
+                android:text="@string/foal"
+                android:onClick="foalTeamA"
+                android:layout_marginLeft="@dimen/marginForTextLeft"
+                android:layout_marginRight="@dimen/marginForTextRight"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:background="#fff"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="@dimen/marginForTextTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingForText"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:background="#f44336"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"
+                        android:textColor="@color/nameTeams"
+                        android:text="@string/arsenal"
+                        android:textSize="25sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingForText"
+                        android:text="@string/score"
+                        android:textColor="@color/information"
+                        android:textAllCaps="true"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingForText"
+                        android:textSize="50sp"
+                        android:textColor="@color/information"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"
+                        android:textStyle="bold"
+                        android:id="@+id/team_b_score"
+                        android:text="0" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"
+                        android:layout_margin="@dimen/marginButton"
+                        android:text="@string/goal"
+                        android:onClick="goalTeamB"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/marginForTextTop"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"
+                        android:padding="@dimen/paddingForText"
+                        android:text="@string/foal"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/information"
+                        android:fontFamily="sans-serif-condensed"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/information"
+                        android:padding="@dimen/paddingForText"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:id="@+id/team_b_foal"
+                        android:text="@string/zero" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/marginButton"
+                        android:text="@string/foal"
+                        android:onClick="foalTeamB"
+                        android:layout_marginLeft="@dimen/marginForTextLeft"
+                        android:layout_marginRight="@dimen/marginForTextRight"/>
+
+                </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset"
+        android:onClick="reset"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Football game</string>
+    <string name="chelsea">chelsea</string>
+    <string name="arsenal">arsenal</string>
+    <string name="score">score</string>
+    <string name="reset">Reset</string>
+    <string name="foal">Foal</string>
+    <string name="goal">Goal!</string>
+    <string name="zero">0</string>
+</resources>
